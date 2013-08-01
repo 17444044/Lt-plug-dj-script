@@ -30,7 +30,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
             "Now Playing" : "Now Playing",
             "Time Remaining" : "Time Wasted",
             "Volume" : "Crank it up!",
-            "Current DJ" : "Current DJ",
+            "Current DJ" : "dabar",
             "Crowd Approval" : "Crowd's Reaction",
             "Fans":"Minions"
         };
