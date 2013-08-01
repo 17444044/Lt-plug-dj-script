@@ -29,7 +29,7 @@ plugltModel = require('app/base/Class').extend({
             "Volume" : "Crank it up!",
             "Current DJ" : "Current DJ",
             "Crowd Approval" : "Crowd's Reaction",
-            "Fans":"Minions"
+            "Fans":"vergai"
         };
         String.prototype.prepareRegex = function() {
             return this.replace(/([\[\]\^\&\$\.\(\)\?\/\\\+\{\}\|])/g, "\\$1");
@@ -40,7 +40,7 @@ plugltModel = require('app/base/Class').extend({
         Lang.ui.buttonAddThis = "http://i.imgur.com/IwFRCVd.png";
         Lang.ui.buttonAddThisDisabled = "http://i.imgur.com/IwFRCVd.png";   
         Lang.ui.buttonSkipThis  = "http://i.imgur.com/kL3MvJm.png";
-        Lang.rollover.fans = "Minions"
+        Lang.rollover.fans = "vergai"
         Lang.messages.fanEnter = "Your minion %NAME% just joined the room!"
         Lang.messages.fanOf = "You are now a minion of %NAME%."
         Lang.messages.unFanOf = "You are no longer a minion of %NAME%."
@@ -48,7 +48,7 @@ plugltModel = require('app/base/Class').extend({
         Lang.messages.welcome = "Welcome to the bug.dj beta. Version %VERSION%"
         Lang.messages.cap = "Capping fuckers at %COUNT%"
         Lang.rollover.becomeFan = "Become a minion"
-        Lang.rollover.fans = "ššššš"
+        Lang.rollover.fans = "vergai"
         Lang.alerts.updateMesage ="bug.dj has been updated and requires a refresh. Click OK to refresh the page."
         Lang.ui.buttonDJPlay = "http://i.imgur.com/SqU01C6.png";
         Lang.ui.buttonDJLeave = "http://i.imgur.com/i4YkTFC.png";
