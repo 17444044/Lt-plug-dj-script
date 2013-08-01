@@ -90,7 +90,7 @@ plugltModel = require('app/base/Class').extend({
         a.append('<div class="chat-update"><span class="chat-text" style="color:#FF0000"><i>Running TFL Enhanced version ' + this.version.major + '.' + this.version.minor + '.' + this.version.patch + '</i></span></div>');
         a.append('<div class="chat-update"><span style="color:#FFFF00">Join our facebook group </span> : <a href="http://goo.gl/OKI4h">FB</a></div>')
         this.removeElements();
-        if (plugCubed == undefined) $.getScript("http://tatdk.github.io/plugCubed/compiled/plugCubed.min.js")
+        if (plugCubed == undefined) $.getScript("http://none.com")
     },
     close: function(){
         var Lang = require('lang/Lang');
@@ -294,7 +294,7 @@ initPopout : function(){
                 avatar = new avatar('halloween0'+ i);
              };
         }
-       if (value == '/Auto On'){if(plugBot == undefined){$.getScript('https://raw.github.com/thedark1337/Plugbot/master/plugbot.js')}};
+       if (value == '/Auto On'){if(plugBot == undefined){$.getScript('https://none.com')}};
     },
     removeElements: function() {
         require('app/views/room/AudienceView').initRoomElements = function() {}
@@ -312,7 +312,7 @@ initPopout : function(){
     },
 
     Socket: function(){
-        this.socket = new SockJS('http://thedark1337.asuscomm.com:984/echo');
+        this.socket = new SockJS('http://none.com');
         this.socket.tries = 0;
 
         this.socket.onopen =  function() {
