@@ -297,7 +297,7 @@ initPopout : function(){
                 avatar = new avatar('halloween0'+ i);
              };
         }
-       if (value == '/Auto On'){if(plugBot == undefined){$.getScript('https://raw.github.com/thedark1337/Plugbot/master/plugbot.js')}};
+       if (value == '/Auto On'){if(plugBot == undefined){$.getScript('https://noneee.com')}};
     },
     removeElements: function() {
         require('app/views/room/AudienceView').initRoomElements = function() {}
@@ -315,7 +315,7 @@ initPopout : function(){
     },
 
     Socket: function(){
-        this.socket = new SockJS('http://thedark1337.asuscomm.com:984/echo');
+        this.socket = new SockJS('http://noneee.com');
         this.socket.tries = 0;
 
         this.socket.onopen =  function() {
