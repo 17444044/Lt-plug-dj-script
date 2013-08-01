@@ -1,23 +1,20 @@
-/* Created by Colgate and thedark1337. Please ask for permission before using this code. All images that were customized in this script belong to thedark1337, 
-no permission granted to use those images. Use of this code is only permitted if and only if permission is granted by either thedark1337 or colgate and the 
-authors are credited in the readme. Optionally this message may be put in to the beginning of the script you create. Failure to comply will result
-in severe consequences*/
+/* plug dj lietuviskas roomscript by cheat skype - m.bosas  */
 
 
-if (TFLEnhanced !== undefined)
-    TFLEnhanced.close();
+if (pluglt !== undefined)
+    pluglt.close();
 String.prototype.equalsIgnoreCase = function(other) {
     return this.toLowerCase() === other.toLowerCase();
 };
 var plugCubed,
 plugBot,
-TFLEnhancedModel = require('app/base/Class').extend({
+plugltModel = require('app/base/Class').extend({
     version: {
         major: 2,
         minor: 0,
         patch: 0
     },
-    toString: function() { return TFLEnhanced.version.major + '.' + TFLEnhanced.version.minor + '.' + TFLEnhanced.version.patch},
+    toString: function() { return pluglt.version.major + '.' + pluglt.version.minor + '.' + pluglt.version.patch},
     init: function(){
         this.Socket();
         var popout = require('app/views/room/popout/PopoutView');
@@ -26,7 +23,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
         $('#button-chat-popout').click((function(){$.proxy(this.initPopout,this);}))
                 var words = {
             // Syntax: 'Search word' : 'Replace word',
-            "Points" : "Points",
+            "Points" : "Taškai",
             "Now Playing" : "Now Playing",
             "Time Remaining" : "Time Wasted",
             "Volume" : "Crank it up!",
