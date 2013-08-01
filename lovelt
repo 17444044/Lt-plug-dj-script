@@ -23,7 +23,7 @@ plugltModel = require('app/base/Class').extend({
         $('#button-chat-popout').click((function(){$.proxy(this.initPopout,this);}))
                 var words = {
             // Syntax: 'Search word' : 'Replace word',
-            "Points" : "Taškai",
+            "Points" : "testas",
             "Now Playing" : "Now Playing",
             "Time Remaining" : "Time Wasted",
             "Volume" : "Crank it up!",
