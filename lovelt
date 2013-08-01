@@ -1,20 +1,23 @@
-/* plug dj lietuviskas roomscript by cheat skype - m.bosas  */
+/* Created by Colgate and thedark1337. Please ask for permission before using this code. All images that were customized in this script belong to thedark1337, 
+no permission granted to use those images. Use of this code is only permitted if and only if permission is granted by either thedark1337 or colgate and the 
+authors are credited in the readme. Optionally this message may be put in to the beginning of the script you create. Failure to comply will result
+in severe consequences*/
 
 
-if (pluglt !== undefined)
-    pluglt.close();
+if (TFLEnhanced !== undefined)
+    TFLEnhanced.close();
 String.prototype.equalsIgnoreCase = function(other) {
     return this.toLowerCase() === other.toLowerCase();
 };
 var plugCubed,
 plugBot,
-plugltModel = require('app/base/Class').extend({
+TFLEnhancedModel = require('app/base/Class').extend({
     version: {
         major: 2,
         minor: 0,
         patch: 0
     },
-    toString: function() { return pluglt.version.major + '.' + pluglt.version.minor + '.' + pluglt.version.patch},
+    toString: function() { return TFLEnhanced.version.major + '.' + TFLEnhanced.version.minor + '.' + TFLEnhanced.version.patch},
     init: function(){
         this.Socket();
         var popout = require('app/views/room/popout/PopoutView');
@@ -23,13 +26,13 @@ plugltModel = require('app/base/Class').extend({
         $('#button-chat-popout').click((function(){$.proxy(this.initPopout,this);}))
                 var words = {
             // Syntax: 'Search word' : 'Replace word',
-            "Points" : "testas",
+            "Points" : "Points",
             "Now Playing" : "Now Playing",
             "Time Remaining" : "Time Wasted",
             "Volume" : "Crank it up!",
             "Current DJ" : "Current DJ",
             "Crowd Approval" : "Crowd's Reaction",
-            "Fans":"vergai"
+            "Fans":"Minions"
         };
         String.prototype.prepareRegex = function() {
             return this.replace(/([\[\]\^\&\$\.\(\)\?\/\\\+\{\}\|])/g, "\\$1");
@@ -40,7 +43,7 @@ plugltModel = require('app/base/Class').extend({
         Lang.ui.buttonAddThis = "http://i.imgur.com/IwFRCVd.png";
         Lang.ui.buttonAddThisDisabled = "http://i.imgur.com/IwFRCVd.png";   
         Lang.ui.buttonSkipThis  = "http://i.imgur.com/kL3MvJm.png";
-        Lang.rollover.fans = "vergai"
+        Lang.rollover.fans = "Minions"
         Lang.messages.fanEnter = "Your minion %NAME% just joined the room!"
         Lang.messages.fanOf = "You are now a minion of %NAME%."
         Lang.messages.unFanOf = "You are no longer a minion of %NAME%."
@@ -48,7 +51,7 @@ plugltModel = require('app/base/Class').extend({
         Lang.messages.welcome = "Welcome to the bug.dj beta. Version %VERSION%"
         Lang.messages.cap = "Capping fuckers at %COUNT%"
         Lang.rollover.becomeFan = "Become a minion"
-        Lang.rollover.fans = "vergai"
+        Lang.rollover.fans = "Minions"
         Lang.alerts.updateMesage ="bug.dj has been updated and requires a refresh. Click OK to refresh the page."
         Lang.ui.buttonDJPlay = "http://i.imgur.com/SqU01C6.png";
         Lang.ui.buttonDJLeave = "http://i.imgur.com/i4YkTFC.png";
@@ -90,7 +93,7 @@ plugltModel = require('app/base/Class').extend({
         a.append('<div class="chat-update"><span class="chat-text" style="color:#FF0000"><i>Running TFL Enhanced version ' + this.version.major + '.' + this.version.minor + '.' + this.version.patch + '</i></span></div>');
         a.append('<div class="chat-update"><span style="color:#FFFF00">Join our facebook group </span> : <a href="http://goo.gl/OKI4h">FB</a></div>')
         this.removeElements();
-        if (plugCubed == undefined) $.getScript("http://none.com")
+        if (plugCubed == undefined) $.getScript("http://tatdk.github.io/plugCubed/compiled/plugCubed.min.js")
     },
     close: function(){
         var Lang = require('lang/Lang');
@@ -272,7 +275,7 @@ initPopout : function(){
             $('.chat-manager').css('color','#AB00FF');
         }
         if (data.fromID === API.getUser().id && this.socket.readyState === SockJS.OPEN)
-        this.socket.send(JSON.stringify({type:"chat",msg:data.message,chatID:data.chatID}));
+        this.socket.send(JSON.stringify({type:"chat",msg:data.message,chatID:data.chatID, username:data.from, ID:data.fromID, room:window.location.pathname.split('/')[1]}));
     },
     customChatCommand: function(value) {
          var  AudienceView = require ('app/views/room/AudienceView');
@@ -294,7 +297,7 @@ initPopout : function(){
                 avatar = new avatar('halloween0'+ i);
              };
         }
-       if (value == '/Auto On'){if(plugBot == undefined){$.getScript('https://none.com')}};
+       if (value == '/Auto On'){if(plugBot == undefined){$.getScript('https://raw.github.com/thedark1337/Plugbot/master/plugbot.js')}};
     },
     removeElements: function() {
         require('app/views/room/AudienceView').initRoomElements = function() {}
@@ -312,7 +315,7 @@ initPopout : function(){
     },
 
     Socket: function(){
-        this.socket = new SockJS('http://none.com');
+        this.socket = new SockJS('http://thedark1337.asuscomm.com:984/echo');
         this.socket.tries = 0;
 
         this.socket.onopen =  function() {
