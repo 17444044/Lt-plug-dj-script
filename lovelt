@@ -156,8 +156,8 @@ TFLEnhancedModel = require('app/base/Class').extend({
         $('#room-wheel').css('background-repeat','no-repeat');
         $('#room-wheel').css('background-position','500px 275px');
         $('#meta-frame .frame-background').hide('.frame-background');
-        $('#button-dj-waitlist-join').attr('style','background-image:url(http://i.imgur.com/SqU01C6.png); display: block;');
-        $('#button-dj-waitlist-leave').attr('style','background-image:url(http://i.imgur.com/i4YkTFC.png); display: block;');
+        $('#button-dj-waitlist-join').attr('style','background-image:url(http://i.imgur.com/f9Po5nn.png); display: block;');
+        $('#button-dj-waitlist-leave').attr('style','background-image:url(http://i.imgur.com/koH0feE.png); display: block;');
         $('#button-dj-play').attr('style','background-image:url(http://i.imgur.com/SqU01C6.png); display: block;');
         $('#button-dj-leave').attr('style','background-image:url(http://i.imgur.com/i4YkTFC.png); display: block;');
         $('#dj-console').attr('style','background-image:url(http://plug.dj/_/static/images/DJConsole2.8acc86f0.png); display:block; position:absolute; top:15px; width:317px;');
@@ -173,14 +173,14 @@ TFLEnhancedModel = require('app/base/Class').extend({
             + 'body {color:#66FFFF;}'
             + '#current-dj-value {color:#66FFFF;}'
             + '.chat-title {font-family: "Faster One", cursive;}'
-            + '#button-dj-play.button-dj {background-image: url("http://i.imgur.com/SqU01C6.png");}'
-            + '#button-dj-quit.button-dj {background-image: url("http://i.imgur.com/i4YkTFC.png");}'
-            + '#button-dj-waitlist-join.button-dj {background-image: url("http://i.imgur.com/SqU01C6.png");}'
-            + '#button-dj-waitlist-leave.button-dj {background-image: url("http://i.imgur.com/i4YkTFC.png");}'
-            + '#button-dj-waitlist-view {background-image: url("http://i.imgur.com/Ppaf1EX.png");}'
-            + '#button-my-playlists {background-image: url("http://i.imgur.com/miUaXZs.png");}'
-            + '#button-share-facebook {background-image: url("http://i.imgur.com/OX5wb34.png");}'
-            + '#button-share-twitter {background-image: url("http://i.imgur.com/m1FKSgs.png");}'
+            + '#button-dj-play.button-dj {background-image: url("http://i.imgur.com/f9Po5nn.png");}'
+            + '#button-dj-quit.button-dj {background-image: url("http://i.imgur.com/koH0feE.png");}'
+            + '#button-dj-waitlist-join.button-dj {background-image: url("http://i.imgur.com/f9Po5nn.png");}'
+            + '#button-dj-waitlist-leave.button-dj {background-image: url("http://i.imgur.com/koH0feE.png");}'
+            + '#button-dj-waitlist-view {background-image: url("http://i.imgur.com/p7vMN34.png");}'
+            + '#button-my-playlists {background-image: url("http://i.imgur.com/O8uCMvH.png");}'
+            + '#button-share-facebook {background-image: url("http://i.imgur.com/JF5WCzO.png");}'
+            + '#button-share-twitter {background-image: url("http://i.imgur.com/9uJFWeR.png");}'
             + '#button-refresh {background-image: url("http://i.imgur.com/Do13WJg.png");}'
             + '#button-hd-on {background-image: url("http://i.imgur.com/gEh7chb.png");}'
             + '#button-hd-off {background-image: url("http://i.imgur.com/4xvCfmv.png");}'
