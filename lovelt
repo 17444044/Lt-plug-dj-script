@@ -34,16 +34,16 @@ TFLEnhancedModel = require('app/base/Class').extend({
         Lang.ui.buttonVotePositive = "http://i.imgur.com/AavorRZ.png";
         Lang.ui.buttonVotePositiveSelected = "http://i.imgur.com/nPqYDEs.png";
         Lang.ui.buttonVotePositiveDisabled = "http://i.imgur.com/AavorRZ.png";
-        Lang.ui.buttonAddThis = "http://i.imgur.com/IwFRCVd.png";
-        Lang.ui.buttonAddThisDisabled = "http://i.imgur.com/IwFRCVd.png";   
-        Lang.ui.buttonSkipThis  = "http://i.imgur.com/kL3MvJm.png";
+        Lang.ui.buttonAddThis = "http://i.imgur.com/6OE7pm2.png";
+        Lang.ui.buttonAddThisDisabled = "http://i.imgur.com/6OE7pm2.png";   
+        Lang.ui.buttonSkipThis  = "http://i.imgur.com/aT26VBk.png";
         Lang.rollover.fans = "Fanai"
         Lang.messages.fanEnter = "Tavo fanas %NAME% prisijungė prie kambario!"
         Lang.messages.fanOf = "Tapai NAME%'o fanu."
         Lang.messages.unFanOf = "Nebesi %NAME%'o fanas."
         Lang.messages.follow = "%NAME% tapo tavo fanu!"
         Lang.messages.welcome = "Welcome to the plug.dj beta. Version %VERSION%"
-        Lang.messages.cap = "Capping fuckers at %COUNT%"
+        Lang.messages.cap = "Capping avatars at %COUNT%"
         Lang.rollover.becomeFan = "Tapk fanu"
         Lang.rollover.fans = "Fanai"
         Lang.alerts.updateMesage ="plug.dj has been updated and requires a refresh. Click OK to refresh the page."
@@ -141,7 +141,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
         }
     },
     initCSS: function() {
-        $('#room-wheel').css('background','url("https://github.com/Colgate/TFL-Enhanced/raw/master/extras/TFL.gif")');
+        $('#room-wheel').css('background','url("http://i.imgur.com/Z8IvhTF.png")');
         $('#room-wheel').css('background-repeat','no-repeat');
         $('#room-wheel').css('background-position','500px 275px');
         $('#meta-frame .frame-background').hide('.frame-background');
@@ -150,7 +150,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
         $('#button-dj-play').attr('style','background-image:url(http://i.imgur.com/SqU01C6.png); display: block;');
         $('#button-dj-leave').attr('style','background-image:url(http://i.imgur.com/i4YkTFC.png); display: block;');
         $('#dj-console').attr('style','background-image:url(http://i.imgur.com/3qAzTBl.png); display:block; position:absolute; top:15px; width:317px;');
-        $('#button-add-this').attr('style','background-image:url(http://i.imgur.com/IwFRCVd.png);');
+        $('#button-add-this').attr('style','background-image:url(http://i.imgur.com/6OE7pm2.png);');
         $('#meta-frame').css('background-color','transparent');
         $('#playback .frame-background').hide('.frame-background');
         $('#playback').css('background-color','transparent');
@@ -167,9 +167,9 @@ TFLEnhancedModel = require('app/base/Class').extend({
             + '#button-dj-waitlist-join.button-dj {background-image: url("http://i.imgur.com/SqU01C6.png");}'
             + '#button-dj-waitlist-leave.button-dj {background-image: url("http://i.imgur.com/i4YkTFC.png");}'
             + '#button-dj-waitlist-view {background-image: url("http://i.imgur.com/Ppaf1EX.png");}'
-            + '#button-my-playlists {background-image: url("http://i.imgur.com/PsMyBcu.png");}'
-            + '#button-share-facebook {background-image: url("http://i.imgur.com/DxyDvh5.png");}'
-            + '#button-share-twitter {background-image: url("http://i.imgur.com/qNsYnNY.png");}'
+            + '#button-my-playlists {background-image: url("http://i.imgur.com/miUaXZs.png");}'
+            + '#button-share-facebook {background-image: url("http://i.imgur.com/OX5wb34.png");}'
+            + '#button-share-twitter {background-image: url("http://i.imgur.com/m1FKSgs.png");}'
             + '#button-refresh {background-image: url("http://i.imgur.com/Do13WJg.png");}'
             + '#button-hd-on {background-image: url("http://i.imgur.com/gEh7chb.png");}'
             + '#button-hd-off {background-image: url("http://i.imgur.com/4xvCfmv.png");}'
