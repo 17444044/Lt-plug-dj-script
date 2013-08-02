@@ -27,14 +27,18 @@ TFLEnhancedModel = require('app/base/Class').extend({
             "Current DJ" : "Dabartinis DJ",
             "Crowd Approval" : "Klausytojų Reakcija",
             "Fans":"Fanai",
-            "Info":"Informacija"
+            "USERS":"VARTOTOJAI",
+            "HISTORY":"ISTORIJA"
         };
         String.prototype.prepareRegex = function() {
             return this.replace(/([\[\]\^\&\$\.\(\)\?\/\\\+\{\}\|])/g, "\\$1");
         };
-        Lang.ui.buttonVotePositive = "http://i.imgur.com/AavorRZ.png";
-        Lang.ui.buttonVotePositiveSelected = "http://i.imgur.com/nPqYDEs.png";
-        Lang.ui.buttonVotePositiveDisabled = "http://i.imgur.com/AavorRZ.png";
+        Lang.ui.buttonVotePositive = "http://i.imgur.com/ZOPJB3z.png";
+        Lang.ui.buttonVotePositiveSelected = "http://i.imgur.com/YOK7Nfd.png";
+        Lang.ui.buttonVotePositiveDisabled = "http://i.imgur.com/scMGapm.png";
+        Lang.ui.buttonVoteNegative = "http://i.imgur.com/17agBOQ.png";
+        Lang.ui.buttonVoteNegativeSelected = "http://i.imgur.com/6209f93.png";
+        Lang.ui.buttonVoteNegativeDisabled = "http://i.imgur.com/PUyhboU.png";
         Lang.ui.buttonAddThis = "http://i.imgur.com/6OE7pm2.png";
         Lang.ui.buttonAddThisDisabled = "http://i.imgur.com/6OE7pm2.png";   
         Lang.ui.buttonSkipThis  = "http://i.imgur.com/aT26VBk.png";
@@ -110,7 +114,13 @@ TFLEnhancedModel = require('app/base/Class').extend({
         Lang.ui.buttonVotePositiveSelected = "http://plug.dj/_/static/images/en/ButtonVotePositiveSelected.c9947cb3.png";
         Lang.ui.buttonVotePositiveDisabled = "http://plug.dj/_/static/images/en/ButtonVotePositiveDisabled.ce7c40b3.png";
         Lang.ui.buttonAddThis = "http://plug.dj/_/static/images/en/ButtonAddThis.175d7d45.png";
-        Lang.ui.buttonAddThisDisabled ="http://plug.dj/_/static/images/en/ButtonAddThisDisabled.b121845e.png"; 
+        Lang.ui.buttonVoteNegative = 
+"http://plug.dj/static/images/en/ButtonVoteNegative.ef04d51.png";
+        Lang.ui.buttonVoteNegativeSelected = 
+"http://plug.dj//static/images/en/ButtonVoteNegativeSelected.675a2ac.png";
+        Lang.ui.buttonVoteNegativeDisabled = 
+"http://plug.dj//static/images/en/ButtonVoteNegativeDisabled.64485ab.png";
+        Lang.ui.buttonAddThisDisabled = "http://plug.dj/_/static/images/en/ButtonAddThisDisabled.b121845e.png"; 
         Lang.ui.buttonSkipThis = "http://plug.dj/_/static/images/en/ButtonSkipThis.b9a1c7b7.png";
         Lang.ui.buttonDJPlay = "http://plug.dj/_/static/images/en/ButtonDJPlay.742fd499.png";
         Lang.ui.buttonDJLeave = "http://plug.dj/_/static/images/en/ButtonDJQuit.1a691d0c.png";
@@ -150,7 +160,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
         $('#button-dj-waitlist-leave').attr('style','background-image:url(http://i.imgur.com/i4YkTFC.png); display: block;');
         $('#button-dj-play').attr('style','background-image:url(http://i.imgur.com/SqU01C6.png); display: block;');
         $('#button-dj-leave').attr('style','background-image:url(http://i.imgur.com/i4YkTFC.png); display: block;');
-        $('#dj-console').attr('style','background-image:url(http://i.imgur.com/3qAzTBl.png); display:block; position:absolute; top:15px; width:317px;');
+        $('#dj-console').attr('style','background-image:url(http://plug.dj/_/static/images/DJConsole2.8acc86f0.png); display:block; position:absolute; top:15px; width:317px;');
         $('#button-add-this').attr('style','background-image:url(http://i.imgur.com/6OE7pm2.png);');
         $('#meta-frame').css('background-color','transparent');
         $('#playback .frame-background').hide('.frame-background');
@@ -224,18 +234,18 @@ initPopout : function(){
             styles+= '.chat-emote {color:#FCFF00}';    
             styles+= '.chat-emote .chat-from {color:#FCFF00}';
             styles+= '.chat-emote .chat-text, .chat-system .chat-text {color:FCFF00}';
-            styles+= '.chat-host {background-image: url("http://i.imgur.com/FIRn1Lp.png")}';
-            styles+= '.chat-cohost {background-image: url("http://i.imgur.com/f5VVDSz.png")}';
-            styles+= '.chat-manager {background-image: url("http://i.imgur.com/dJa4Svb.png")}';
-            styles+= '.chat-bouncer{background-image: url("http://i.imgur.com/Q3I4vg0.png")}'; 
-            styles+= '.chat-from-featureddj {background: url("http://i.imgur.com/tlXvCWf.png") no-repeat}';
+            styles+= '.chat-host {background-image: url("http://i.imgur.com/6Ooz9Vy.png")}';
+            styles+= '.chat-cohost {background-image: url("http://i.imgur.com/FC4P1BS.png")}';
+            styles+= '.chat-manager {background-image: url("http://i.imgur.com/fkwRMDj.png")}';
+            styles+= '.chat-bouncer{background-image: url("http://i.imgur.com/1IxIEJ8.png")}'; 
+            styles+= '.chat-from-featureddj {background: url("http://i.imgur.com/3ZwHrc1.png") no-repeat}';
             styles+= '.chat-from-featureddj {padding-left:17px}';
             styles+= '.chat-message .chat-from-featureddj, .chat-mention .chat-from-featureddj {color:#0084FF !important}';
             styles+= '.chat-message .chat-from-bouncer, .chat-mention .chat-from-bouncer {color:#66CDD6 !important}';
             styles+= '.chat-message .chat-from-manager, .chat-mention .chat-from-manager {color:#92FFFF !important}';
-            styles+= '.chat-message .chat-from, .chat-mention .chat-from{background: url("http://i.imgur.com/bJXq2aX.png") no-repeat}';
+            styles+= '.chat-message .chat-from, .chat-mention .chat-from{background: url("http://i.imgur.com/3ZwHrc1.png") no-repeat}';
             styles+= '.chat-message .chat-from, .chat-mention .chat-from {padding-left:17px}';
-            styles+= '.chat-from-you {background: url("http://i.imgur.com/bJXq2aX.png") no-repeat}';
+            styles+= '.chat-from-you {background: url("http://i.imgur.com/3ZwHrc1.png") no-repeat}';
             styles+= '.chat-from-you {padding-left:17px}';
             styles+= '.chat-manager {color:#20F92E}';
             styles+= '.chat-message .chat-from-host, .chat-mention .chat-from-host {color:#FF4000 !important}';
@@ -254,12 +264,12 @@ initPopout : function(){
     onChat: function(data) {
         var  AudienceView = require ('app/views/room/AudienceView');
         if (data.type == 'message' && (API.hasPermission(data.fromID, API.ROLE.MANAGER)  || data.fromID == "50aeb077877b9217e2fbff00") && data.message.indexOf('!strobe on') === 0) {
-            API.chatLog(data.from + ' hit the strobe light!');
+            API.chatLog(data.from + ' -');
            AudienceView.strobeMode('true');
         } else if (data.type == 'message' && (API.hasPermission(data.fromID, API.ROLE.MANAGER)|| data.fromID == "50aeb077877b9217e2fbff00") && data.message.indexOf('!strobe off') === 0) {
             AudienceView.strobeMode();
         } else if (data.type == 'message' && (API.hasPermission(data.fromID, API.ROLE.MANAGER)  || data.fromID == "50aeb077877b9217e2fbff00") && data.message.indexOf('!rave on') === 0) {
-            API.chatLog(data.from + ' turned the lights down!');
+            API.chatLog(data.from + ' -');
              AudienceView.lightsOut('true');
         } else if (data.type == 'message' && (API.hasPermission(data.fromID, API.ROLE.MANAGER)  || data.fromID == "50aeb077877b9217e2fbff00") && data.message.indexOf('!rave off') === 0) {
             AudienceView.lightsOut();
