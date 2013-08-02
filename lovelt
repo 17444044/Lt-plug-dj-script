@@ -26,9 +26,8 @@ TFLEnhancedModel = require('app/base/Class').extend({
             "Volume" : "Garsas",
             "Current DJ" : "Dabartinis DJ",
             "Crowd Approval" : "Klausytojų Reakcija",
-            "Fans":"Fanai",
-            "USERS":"VARTOTOJAI",
-            "HISTORY":"ISTORIJA"
+            "Fans":"Fanai"
+          
         };
         String.prototype.prepareRegex = function() {
             return this.replace(/([\[\]\^\&\$\.\(\)\?\/\\\+\{\}\|])/g, "\\$1");
@@ -47,7 +46,8 @@ TFLEnhancedModel = require('app/base/Class').extend({
         Lang.messages.fanOf = "Tapai %NAME%'o fanu."
         Lang.messages.unFanOf = "Nebesi %NAME%'o fanas."
         Lang.messages.follow = "%NAME% tapo tavo fanu!"
-        Lang.messages.welcome = "Welcome to the plug.dj beta. Version %VERSION%"
+        Lang.messages.welcome = "Welcome to the plug.dj beta. Version
+%VERSION%"
         Lang.messages.cap = "Capping avatars at %COUNT%"
         Lang.rollover.becomeFan = "Tapk fanu"
         Lang.rollover.fans = "Fanai"
@@ -154,12 +154,12 @@ TFLEnhancedModel = require('app/base/Class').extend({
     initCSS: function() {
         $('#room-wheel').css('background','url("http://i.imgur.com/Z8IvhTF.png")');
         $('#room-wheel').css('background-repeat','no-repeat');
-        $('#room-wheel').css('background-position','500px 275px');
+        $('#room-wheel').css('background-position','600px 275px');
         $('#meta-frame .frame-background').hide('.frame-background');
         $('#button-dj-waitlist-join').attr('style','background-image:url(http://i.imgur.com/f9Po5nn.png); display: block;');
         $('#button-dj-waitlist-leave').attr('style','background-image:url(http://i.imgur.com/koH0feE.png); display: block;');
-        $('#button-dj-play').attr('style','background-image:url(http://i.imgur.com/SqU01C6.png); display: block;');
-        $('#button-dj-leave').attr('style','background-image:url(http://i.imgur.com/i4YkTFC.png); display: block;');
+        $('#button-dj-play').attr('style','background-image:url(http://i.imgur.com/f9Po5nn.png); display: block;');
+        $('#button-dj-leave').attr('style','background-image:url(http://i.imgur.com/koH0feE.png); display: block;');
         $('#dj-console').attr('style','background-image:url(http://plug.dj/_/static/images/DJConsole2.8acc86f0.png); display:block; position:absolute; top:15px; width:317px;');
         $('#button-add-this').attr('style','background-image:url(http://i.imgur.com/6OE7pm2.png);');
         $('#meta-frame').css('background-color','transparent');
