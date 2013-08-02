@@ -161,7 +161,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
         $('#button-dj-play').attr('style','background-image:url(http://i.imgur.com/f9Po5nn.png); display: block;');
         $('#button-dj-leave').attr('style','background-image:url(http://i.imgur.com/koH0feE.png); display: block;');
         $('#dj-console').attr('style','background-image:url(http://plug.dj/_/static/images/DJConsole2.8acc86f0.png); display:block; position:absolute; top:15px; width:317px;');
-        $('#button-add-this').attr('style','background-image:url(http://i.imgur.com/6OE7pm2.png);');
+        $('#button-add-this').attr('style','background-image:url(http://i.imgur.com/2QDuyT7.png);');
         $('#meta-frame').css('background-color','transparent');
         $('#playback .frame-background').hide('.frame-background');
         $('#playback').css('background-color','transparent');
