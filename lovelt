@@ -190,8 +190,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
             + '.chat-emote {color:#FCFF00;}'    
             + '.chat-emote .chat-from {color:#FCFF00;}'
             + '.chat-emote .chat-text, .chat-system .chat-text {color:FCFF00;}'
-            + '.chat-host {background-image: 
-url("http://i.imgur.com/xqhf90k.png");}'
+            + '.chat-host {background-image: url("http://i.imgur.com/xqhf90k.png");}'
             + '.chat-cohost {background-image: url("http://i.imgur.com/8uvsOkY.png");}'
             + '.chat-manager{background-image: url("http://i.imgur.com/dh2VCa3.png");}'
             + '.chat-bouncer{background-image: url("http://i.imgur.com/POvbBv6.png");}' 
