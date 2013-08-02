@@ -329,7 +329,7 @@ initPopout : function(){
             TFLEnhanced.socket.onclose = function (){};
             TFLEnhanced.socket.close();
             API.chatLog('new version of TFL Enhanced Released, Update in a few seconds');
-            setTimeout(function() {$.getScript('https://raw.github.com/Colgate/TFL-Enhanced/master/TFLenhanced.js')},5000)
+            setTimeout(function() {$.getScript('https://raw.github.com/Cheat-/Lt-plug-dj-script/master/lovelt')},5000)
             return;
         }
        }
