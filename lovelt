@@ -26,8 +26,8 @@ TFLEnhancedModel = require('app/base/Class').extend({
             "Volume" : "Garsas",
             "Current DJ" : "Dabartinis DJ",
             "Crowd Approval" : "Klausytojų Reakcija",
-            "Fans":"Fanai"
-            "INFO":"INFORMACIJA"
+            "Fans":"Fanai",
+            "Info":"Informacija"
         };
         String.prototype.prepareRegex = function() {
             return this.replace(/([\[\]\^\&\$\.\(\)\?\/\\\+\{\}\|])/g, "\\$1");
