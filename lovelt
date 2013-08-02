@@ -154,7 +154,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
     initCSS: function() {
         $('#room-wheel').css('background','url("http://i.imgur.com/Z8IvhTF.png")');
         $('#room-wheel').css('background-repeat','no-repeat');
-        $('#room-wheel').css('background-position','600px 275px');
+        $('#room-wheel').css('background-position','500px 275px');
         $('#meta-frame .frame-background').hide('.frame-background');
         $('#button-dj-waitlist-join').attr('style','background-image:url(http://i.imgur.com/f9Po5nn.png); display: block;');
         $('#button-dj-waitlist-leave').attr('style','background-image:url(http://i.imgur.com/koH0feE.png); display: block;');
