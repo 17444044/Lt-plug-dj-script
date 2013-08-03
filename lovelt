@@ -54,13 +54,13 @@ TFLEnhancedModel = require('app/base/Class').extend({
         Lang.rollover.becomeFan = "Tapk fanu"
         Lang.rollover.fans = "Fanai"
         Lang.alerts.updateMesage ="plug.dj has been updated and requires a refresh. Click OK to refresh the page."
-        Lang.ui.buttonDJPlay = "http://i.imgur.com/SqU01C6.png";
-        Lang.ui.buttonDJLeave = "http://i.imgur.com/i4YkTFC.png";
-        Lang.ui.buttonDJWaitlistJoin = "http://i.imgur.com/SqU01C6.png";
-        Lang.ui.buttonDJWaitlistLeave = "http://i.imgur.com/i4YkTFC.png";
-        Lang.ui.buttonDJQuitShort = "http://i.imgur.com/i4YkTFC.png";
-        Lang.ui.buttonDJQuit = "http://i.imgur.com/i4YkTFC.png";
-        Lang.ui.buttonDJPlayShort = "http://i.imgur.com/SqU01C6.png";
+        Lang.ui.buttonDJPlay = "http://i.imgur.com/UXxVIfm.png";
+        Lang.ui.buttonDJLeave = "http://i.imgur.com/rZRTSu4.png";
+        Lang.ui.buttonDJWaitlistJoin = "http://i.imgur.com/UXxVIfm.png";
+        Lang.ui.buttonDJWaitlistLeave = "http://i.imgur.com/rZRTSu4.png";
+        Lang.ui.buttonDJQuitShort = "http://i.imgur.com/rZRTSu4.png";
+        Lang.ui.buttonDJQuit = "http://i.imgur.com/rZRTSu4.png";
+        Lang.ui.buttonDJPlayShort = "http://i.imgur.com/UXxVIfm.png";
         Lang.rollover.host = "Bosas"
         Lang.chat.help = "<strong>Chat Commands:</strong><br/>/em &nbsp; <em>Emote</em><br/>/me &nbsp; <em>Emote</em><br/>/clear &nbsp; <em>Clear Chat History</em><br/>/cap # &nbsp; <em>Limits the number of avatars rendered (1-200)</em><br/>/ts # &nbsp; <em>Chat timestamps (12, 24, 0)</em><br />/emoji on (or off) <em>Enable/disable Emojis</em><br /> /strobe on/off &nbsp; <em>Strobe light on/off</em><br /> /rave on/off &nbsp; <em>Lights out on/off</em><br />/close &nbsp; <em>Remove TFL Enhanced script</em> <br /> /Avatar number &nbsp; <em> change Halloween Avatars ( number = 1 to 13)</em> <br /> /Auto On &nbsp; <em> plugbot load </em>"
         $('#button-chat-popout').click(function(){setTimeout(function(){TFLEnhanced.initPopout()},500)})
@@ -154,10 +154,10 @@ TFLEnhancedModel = require('app/base/Class').extend({
         $('#room-wheel').css('background-repeat','no-repeat');
         $('#room-wheel').css('background-position','600px 275px');
         $('#meta-frame .frame-background').hide('.frame-background');
-        $('#button-dj-waitlist-join').attr('style','background-image:url(http://i.imgur.com/SqU01C6.png); display: block;');
-        $('#button-dj-waitlist-leave').attr('style','background-image:url(http://i.imgur.com/i4YkTFC.png); display: block;');
-        $('#button-dj-play').attr('style','background-image:url(http://i.imgur.com/SqU01C6.png); display: block;');
-        $('#button-dj-leave').attr('style','background-image:url(http://i.imgur.com/i4YkTFC.png); display: block;');
+        $('#button-dj-waitlist-join').attr('style','background-image:url(http://i.imgur.com/UXxVIfm.png); display: block;');
+        $('#button-dj-waitlist-leave').attr('style','background-image:url(http://i.imgur.com/rZRTSu4.png); display: block;');
+        $('#button-dj-play').attr('style','background-image:url(http://i.imgur.com/UXxVIfm.png); display: block;');
+        $('#button-dj-leave').attr('style','background-image:url(http://i.imgur.com/rZRTSu4.png); display: block;');
         $('#dj-console').attr('style','background-image:url(http://plug.dj/_/static/images/DJConsole2.8acc86f0.png); display:block; position:absolute; top:15px; width:317px;');
         $('#button-add-this').attr('style','background-image:url(http://i.imgur.com/qcWDET3.png);');
         $('#meta-frame').css('background-color','transparent');
@@ -171,11 +171,11 @@ TFLEnhancedModel = require('app/base/Class').extend({
             + 'body {color:#66FFFF;}'
             + '#current-dj-value {color:#66FFFF;}'
             + '.chat-title {font-family: "Faster One", cursive;}'
-            + '#button-dj-play.button-dj {background-image: url("http://i.imgur.com/SqU01C6.png");}'
-            + '#button-dj-quit.button-dj {background-image: url("http://i.imgur.com/i4YkTFC.png");}'
-            + '#button-dj-waitlist-join.button-dj {background-image: url("http://i.imgur.com/SqU01C6.png");}'
-            + '#button-dj-waitlist-leave.button-dj {background-image: url("http://i.imgur.com/i4YkTFC.png");}'
-            + '#button-dj-waitlist-view {background-image: url("http://i.imgur.com/Ppaf1EX.png");}'
+            + '#button-dj-play.button-dj {background-image: url("http://i.imgur.com/UXxVIfm.png");}'
+            + '#button-dj-quit.button-dj {background-image: url("http://i.imgur.com/rZRTSu4.png");}'
+            + '#button-dj-waitlist-join.button-dj {background-image: url("http://i.imgur.com/UXxVIfm.png");}'
+            + '#button-dj-waitlist-leave.button-dj {background-image: url("http://i.imgur.com/rZRTSu4.png");}'
+            + '#button-dj-waitlist-view {background-image: url("http://i.imgur.com/5FZH9oq.png");}'
             + '#button-my-playlists {background-image: url("http://i.imgur.com/p7Uatum.png");}'
             + '#button-share-facebook {background-image: url("http://i.imgur.com/bEJHxvR.png");}'
             + '#button-share-twitter {background-image: url("http://i.imgur.com/NmM2mRY.png");}'
