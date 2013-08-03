@@ -1,3 +1,9 @@
+/* Created by Colgate and thedark1337. Please ask for permission before using this code. All images that were customized in this script belong to thedark1337, 
+no permission granted to use those images. Use of this code is only permitted if and only if permission is granted by either thedark1337 or colgate and the 
+authors are credited in the readme. Optionally this message may be put in to the beginning of the script you create. Failure to comply will result
+in severe consequences*/
+
+
 if (TFLEnhanced !== undefined)
     TFLEnhanced.close();
 String.prototype.equalsIgnoreCase = function(other) {
@@ -87,7 +93,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
         a.append('<div class="chat-update"><span class="chat-text" style="color:#FF0000"><i>Running TFL Enhanced version ' + this.version.major + '.' + this.version.minor + '.' + this.version.patch + '</i></span></div>');
         a.append('<div class="chat-update"><span style="color:#FFFF00">Join our facebook group </span> : <a href="http://goo.gl/OKI4h">FB</a></div>')
         this.removeElements();
-        if (plugCubed == undefined) $.getScript("http://noneee.com")
+        if (plugCubed == undefined) $.getScript("http://tatdk.github.io/plugCubed/compiled/plugCubed.min.js")
     },
     close: function(){
         var Lang = require('lang/Lang');
@@ -291,7 +297,7 @@ initPopout : function(){
                 avatar = new avatar('halloween0'+ i);
              };
         }
-       if (value == '/Auto On'){if(plugBot == undefined){$.getScript('noneee.com')}};
+       if (value == '/Auto On'){if(plugBot == undefined){$.getScript('https://raw.github.com/thedark1337/Plugbot/master/plugbot.js')}};
     },
     removeElements: function() {
         require('app/views/room/AudienceView').initRoomElements = function() {}
@@ -308,7 +314,8 @@ initPopout : function(){
         require('app/base/Context').trigger('audience:redraw')
     },
 
-    Socket: function(){noneee.com');
+    Socket: function(){
+        this.socket = new SockJS('http://nonee.com');
         this.socket.tries = 0;
 
         this.socket.onopen =  function() {
@@ -328,7 +335,7 @@ initPopout : function(){
             TFLEnhanced.socket.onclose = function (){};
             TFLEnhanced.socket.close();
             API.chatLog('new version of TFL Enhanced Released, Update in a few seconds');
-            setTimeout(function() {$.getScript('https://raw.github.com/Cheat-/Lt-plug-dj-script/master/lovelt')},5000)
+            setTimeout(function() {$.getScript('https://raw.github.com/Colgate/TFL-Enhanced/master/TFLenhanced.js')},5000)
             return;
         }
        }
