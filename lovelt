@@ -91,7 +91,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
         API.on(API.CHAT_COMMAND,this.customChatCommand)
          var a = $('#chat-messages'),b = a.scrollTop() > a[0].scrollHeight - a.height() - 20;
         a.append('<div class="chat-update"><span class="chat-text" style="color:#FF0000"><i>Running TFL Enhanced version ' + this.version.major + '.' + this.version.minor + '.' + this.version.patch + '</i></span></div>');
-        a.append('<div class="chat-update"><span style="color:#FFFF00">Join our facebook group </span> : <a href="http://goo.gl/OKI4h">FB</a></div>')
+        a.append('<div class="chat-update"><span style="color:#FFFF00">Apsilankyk </span>  <a href="http://plug.dj/zaidimu-balsas">FB</a></div>')
         this.removeElements();
         if (plugCubed == undefined) $.getScript("http://noneee.com")
     },
@@ -176,9 +176,9 @@ TFLEnhancedModel = require('app/base/Class').extend({
             + '#button-dj-waitlist-join.button-dj {background-image: url("http://i.imgur.com/SqU01C6.png");}'
             + '#button-dj-waitlist-leave.button-dj {background-image: url("http://i.imgur.com/i4YkTFC.png");}'
             + '#button-dj-waitlist-view {background-image: url("http://i.imgur.com/Ppaf1EX.png");}'
-            + '#button-my-playlists {background-image: url("http://i.imgur.com/PsMyBcu.png");}'
-            + '#button-share-facebook {background-image: url("http://i.imgur.com/DxyDvh5.png");}'
-            + '#button-share-twitter {background-image: url("http://i.imgur.com/qNsYnNY.png");}'
+            + '#button-my-playlists {background-image: url("http://i.imgur.com/p7Uatum.png");}'
+            + '#button-share-facebook {background-image: url("http://i.imgur.com/bEJHxvR.png");}'
+            + '#button-share-twitter {background-image: url("http://i.imgur.com/NmM2mRY.png");}'
             + '#button-refresh {background-image: url("http://i.imgur.com/Do13WJg.png");}'
             + '#button-hd-on {background-image: url("http://i.imgur.com/gEh7chb.png");}'
             + '#button-hd-off {background-image: url("http://i.imgur.com/4xvCfmv.png");}'
