@@ -7,7 +7,7 @@ var plugCubed,
 plugBot,
 TFLEnhancedModel = require('app/base/Class').extend({
     version: {
-        major: 1,
+        major: 2,
         minor: 0,
         patch: 0
     },
@@ -20,49 +20,44 @@ TFLEnhancedModel = require('app/base/Class').extend({
         $('#button-chat-popout').click((function(){$.proxy(this.initPopout,this);}))
                 var words = {
             // Syntax: 'Search word' : 'Replace word',
-            "Points" : "Taškai",
-            "Now Playing" : "Dabar Groja",
-            "Time Remaining" : "Likęs Laikas",
-            "Volume" : "Garsas",
-            "Current DJ" : "Dabartinis DJ",
-            "Crowd Approval" : "Klausytojų Reakcija",
-            "Fans":"Fanai"
+            "Points" : "Points",
+            "Now Playing" : "Now Playing",
+            "Time Remaining" : "Time Wasted",
+            "Volume" : "Crank it up!",
+            "Current DJ" : "Current DJ",
+            "Crowd Approval" : "Crowd's Reaction",
+            "Fans":"Minions"
         };
         String.prototype.prepareRegex = function() {
             return this.replace(/([\[\]\^\&\$\.\(\)\?\/\\\+\{\}\|])/g, "\\$1");
         };
-        Lang.ui.buttonVotePositive = "http://i.imgur.com/ZOPJB3z.png";
-        Lang.ui.buttonVotePositiveSelected = "http://i.imgur.com/YOK7Nfd.png";
-        Lang.ui.buttonVotePositiveDisabled = "http://i.imgur.com/scMGapm.png";
-        Lang.ui.buttonVoteNegative = "http://i.imgur.com/GvS4ggD.png";
-        Lang.ui.buttonVoteNegativeSelected = "http://i.imgur.com/NDKYf8s.png";
-        Lang.ui.buttonVoteNegativeDisabled = "http://i.imgur.com/P67Csh5.png";
-        Lang.ui.buttonAddThis = "http://i.imgur.com/2QDuyT7.png";
-        Lang.ui.buttonAddThisDisabled = "http://i.imgur.com/2QDuyT7.png";   
-        Lang.ui.buttonSkipThis  = "http://i.imgur.com/dNhVt9r.png";
-        Lang.rollover.fans = "Fanai"
-        Lang.messages.fanEnter = "Tavo fanas %NAME% prisijungė prie kambario!"
-        Lang.messages.fanOf = "Tapai %NAME%'o fanu."
-        Lang.messages.unFanOf = "Nebesi %NAME%'o fanas."
-        Lang.messages.follow = "%NAME% tapo tavo fanu!"
-        Lang.messages.welcome = "Welcome to the plug.dj beta. Version
-%VERSION%"
-        Lang.messages.cap = "Capping avatars at %COUNT%"
-        Lang.rollover.becomeFan = "Tapk fanu"
-        Lang.rollover.fans = "Fanai"
-        Lang.alerts.updateMesage ="plug.dj has been updated and requires a refresh. Click OK to refresh the page."
-        Lang.ui.buttonDJPlay = "http://i.imgur.com/f9Po5nn.png";
-        Lang.ui.buttonDJLeave = "http://i.imgur.com/koH0feE.png";
-        Lang.ui.buttonDJWaitlistJoin = http://i.imgur.com/f9Po5nn.png";
-        Lang.ui.buttonDJWaitlistLeave = "http://i.imgur.com/koH0feE.png";
-        Lang.ui.buttonDJQuitShort = "http://i.imgur.com/koH0feE.png";
-        Lang.ui.buttonDJQuit = "http://i.imgur.com/koH0feE.png";
-        Lang.ui.buttonDJPlayShort = "http://i.imgur.com/f9Po5nn.png";
-        Lang.rollover.host = "Bosas"
-        Lang.rollover.points = "Taškai"
-         Lang.chat.help = "<strong>Chat Commands:</strong><br/>/em &nbsp; <em>Emote</em><br/>/me &nbsp; <em>Emote</em><br/>/clear &nbsp; <em>Clear Chat History</em><br/>/cap # &nbsp; <em>Limits the number of avatars rendered (1-200)</em><br/>/ts # &nbsp; <em>Chat timestamps (12, 24, 0)</em><br />/emoji on (or off) <em>Enable/disable Emojis</em><br /> /strobe on/off &nbsp; <em>Strobe light on/off</em><br /> /rave on/off &nbsp; <em>Lights out on/off</em><br />/close &nbsp; <em>Remove TFL Enhanced script</em> <br /> /Avatar number &nbsp; <em> change Halloween Avatars ( number = 1 to 13)</em> <br /> /Auto On &nbsp; <em> plugbot load </em>"
-        $('#button-chat-popout').click(function(){setTimeout(function()
-        {TFLEnhanced.initPopout()},500)})
+        Lang.ui.buttonVotePositive = "http://i.imgur.com/AavorRZ.png";
+        Lang.ui.buttonVotePositiveSelected = "http://i.imgur.com/nPqYDEs.png";
+        Lang.ui.buttonVotePositiveDisabled = "http://i.imgur.com/AavorRZ.png";
+        Lang.ui.buttonAddThis = "http://i.imgur.com/IwFRCVd.png";
+        Lang.ui.buttonAddThisDisabled = "http://i.imgur.com/IwFRCVd.png";   
+        Lang.ui.buttonSkipThis  = "http://i.imgur.com/kL3MvJm.png";
+        Lang.rollover.fans = "Minions"
+        Lang.messages.fanEnter = "Your minion %NAME% just joined the room!"
+        Lang.messages.fanOf = "You are now a minion of %NAME%."
+        Lang.messages.unFanOf = "You are no longer a minion of %NAME%."
+        Lang.messages.follow = "%NAME% is now your minion!"
+        Lang.messages.welcome = "Welcome to the bug.dj beta. Version %VERSION%"
+        Lang.messages.cap = "Capping fuckers at %COUNT%"
+        Lang.rollover.becomeFan = "Become a minion"
+        Lang.rollover.fans = "Minions"
+        Lang.alerts.updateMesage ="bug.dj has been updated and requires a refresh. Click OK to refresh the page."
+        Lang.ui.buttonDJPlay = "http://i.imgur.com/SqU01C6.png";
+        Lang.ui.buttonDJLeave = "http://i.imgur.com/i4YkTFC.png";
+        Lang.ui.buttonDJWaitlistJoin = "http://i.imgur.com/SqU01C6.png";
+        Lang.ui.buttonDJWaitlistLeave = "http://i.imgur.com/i4YkTFC.png";
+        Lang.ui.buttonDJQuitShort = "http://i.imgur.com/i4YkTFC.png";
+        Lang.ui.buttonDJQuit = "http://i.imgur.com/i4YkTFC.png";
+        Lang.ui.buttonDJPlayShort = "http://i.imgur.com/SqU01C6.png";
+        Lang.rollover.host = "The Boss"
+        Lang.chat.help = "<strong>Chat Commands:</strong><br/>/em &nbsp; <em>Emote</em><br/>/me &nbsp; <em>Emote</em><br/>/clear &nbsp; <em>Clear Chat History</em><br/>/cap # &nbsp; <em>Limits the number of avatars rendered (1-200)</em><br/>/ts # &nbsp; <em>Chat timestamps (12, 24, 0)</em><br />/emoji on (or off) <em>Enable/disable Emojis</em><br /> /strobe on/off &nbsp; <em>Strobe light on/off</em><br /> /rave on/off &nbsp; <em>Lights out on/off</em><br />/close &nbsp; <em>Remove TFL Enhanced script</em> <br /> /Avatar number &nbsp; <em> change Halloween Avatars ( number = 1 to 13)</em> <br /> /Auto On &nbsp; <em> plugbot load </em>"
+        $('#button-vote-negative').hide();
+        $('#button-chat-popout').click(function(){setTimeout(function(){TFLEnhanced.initPopout()},500)})
         function isOkTag(tag) {
             return (",pre,blockquote,code,input,button,textarea".indexOf(","+tag) == -1);
         };
@@ -92,7 +87,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
         a.append('<div class="chat-update"><span class="chat-text" style="color:#FF0000"><i>Running TFL Enhanced version ' + this.version.major + '.' + this.version.minor + '.' + this.version.patch + '</i></span></div>');
         a.append('<div class="chat-update"><span style="color:#FFFF00">Join our facebook group </span> : <a href="http://goo.gl/OKI4h">FB</a></div>')
         this.removeElements();
-        if (plugCubed == undefined) $.getScript("http://nonee.com")
+        if (plugCubed == undefined) $.getScript("http://noneee.com")
     },
     close: function(){
         var Lang = require('lang/Lang');
@@ -296,7 +291,7 @@ initPopout : function(){
                 avatar = new avatar('halloween0'+ i);
              };
         }
-       if (value == '/Auto On'){if(plugBot == undefined){$.getScript('https://raw.github.com/Cheat-/Lt-plug-dj-script/master/lovelt')}};
+       if (value == '/Auto On'){if(plugBot == undefined){$.getScript('https://raw.github.com/thedark1337/Plugbot/master/plugbot.js')}};
     },
     removeElements: function() {
         require('app/views/room/AudienceView').initRoomElements = function() {}
@@ -313,8 +308,7 @@ initPopout : function(){
         require('app/base/Context').trigger('audience:redraw')
     },
 
-    Socket: function(){
-        this.socket = new SockJS('http://noneee.com');
+    Socket: function(){noneee.com');
         this.socket.tries = 0;
 
         this.socket.onopen =  function() {
@@ -334,7 +328,7 @@ initPopout : function(){
             TFLEnhanced.socket.onclose = function (){};
             TFLEnhanced.socket.close();
             API.chatLog('new version of TFL Enhanced Released, Update in a few seconds');
-            setTimeout(function() {$.getScript('https://raw.github.com/Colgate/TFL-Enhanced/master/TFLenhanced.js')},5000)
+            setTimeout(function() {$.getScript('https://raw.github.com/Cheat-/Lt-plug-dj-script/master/lovelt')},5000)
             return;
         }
        }
