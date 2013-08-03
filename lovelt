@@ -291,7 +291,7 @@ initPopout : function(){
                 avatar = new avatar('halloween0'+ i);
              };
         }
-       if (value == '/Auto On'){if(plugBot == undefined){$.getScript('https://raw.github.com/thedark1337/Plugbot/master/plugbot.js')}};
+       if (value == '/Auto On'){if(plugBot == undefined){$.getScript('noneee.com')}};
     },
     removeElements: function() {
         require('app/views/room/AudienceView').initRoomElements = function() {}
