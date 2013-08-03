@@ -26,7 +26,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
             "Points" : "Taškai",
             "Now Playing" : "Dabar Groja",
             "Time Remaining" : "Likęs Laikas",
-            "Volume" : "{color:FCFF00}Garsas",
+            "Volume" : "Garsas"document.write(str.fontcolor("green"));,
             "Current DJ" : "Dabartinis DJ",
             "Crowd Approval" : "Klausytojų Reakcija",
             "Fans":"Fanai"
