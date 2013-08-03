@@ -10,7 +10,7 @@ var plugCubed,
 plugBot,
 TFLEnhancedModel = require('app/base/Class').extend({
     version: {
-        major: 2,
+        major: 1,
         minor: 0,
         patch: 0
     },
@@ -23,13 +23,13 @@ TFLEnhancedModel = require('app/base/Class').extend({
         $('#button-chat-popout').click((function(){$.proxy(this.initPopout,this);}))
                 var words = {
             // Syntax: 'Search word' : 'Replace word',
-            "Points" : "Points",
-            "Now Playing" : "Now Playing",
-            "Time Remaining" : "Time Wasted",
-            "Volume" : "Crank it up!",
-            "Current DJ" : "Current DJ",
-            "Crowd Approval" : "Crowd's Reaction",
-            "Fans":"Minions"
+            "Points" : "Taškai",
+            "Now Playing" : "Dabar Groja",
+            "Time Remaining" : "Likęs Laikas",
+            "Volume" : "Garsas",
+            "Current DJ" : "Dabartinis DJ",
+            "Crowd Approval" : "Klausytojų Reakcija",
+            "Fans":"Fanai"
         };
         String.prototype.prepareRegex = function() {
             return this.replace(/([\[\]\^\&\$\.\(\)\?\/\\\+\{\}\|])/g, "\\$1");
@@ -40,16 +40,17 @@ TFLEnhancedModel = require('app/base/Class').extend({
         Lang.ui.buttonAddThis = "http://i.imgur.com/IwFRCVd.png";
         Lang.ui.buttonAddThisDisabled = "http://i.imgur.com/IwFRCVd.png";   
         Lang.ui.buttonSkipThis  = "http://i.imgur.com/kL3MvJm.png";
-        Lang.rollover.fans = "Minions"
-        Lang.messages.fanEnter = "Your minion %NAME% just joined the room!"
-        Lang.messages.fanOf = "You are now a minion of %NAME%."
-        Lang.messages.unFanOf = "You are no longer a minion of %NAME%."
-        Lang.messages.follow = "%NAME% is now your minion!"
-        Lang.messages.welcome = "Welcome to the bug.dj beta. Version %VERSION%"
-        Lang.messages.cap = "Capping fuckers at %COUNT%"
-        Lang.rollover.becomeFan = "Become a minion"
-        Lang.rollover.fans = "Minions"
-        Lang.alerts.updateMesage ="bug.dj has been updated and requires a refresh. Click OK to refresh the page."
+        Lang.rollover.fans = "Fanai"
+        Lang.rollover.points = "Taškai"
+        Lang.messages.fanEnter = "Tavo fanas %NAME% prisijungė prie kambario !"
+        Lang.messages.fanOf = " Tapai %NAME% fanu!"
+        Lang.messages.unFanOf = "Nebesi %NAME% fanas."
+        Lang.messages.follow = "%NAME% tapo tavo fanu!"
+        Lang.messages.welcome = "Welcome to the plug.dj beta. Version %VERSION%"
+        Lang.messages.cap = "Capping avatars at %COUNT%"
+        Lang.rollover.becomeFan = "Tapk fanu"
+        Lang.rollover.fans = "Fanai"
+        Lang.alerts.updateMesage ="plug.dj has been updated and requires a refresh. Click OK to refresh the page."
         Lang.ui.buttonDJPlay = "http://i.imgur.com/SqU01C6.png";
         Lang.ui.buttonDJLeave = "http://i.imgur.com/i4YkTFC.png";
         Lang.ui.buttonDJWaitlistJoin = "http://i.imgur.com/SqU01C6.png";
@@ -57,7 +58,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
         Lang.ui.buttonDJQuitShort = "http://i.imgur.com/i4YkTFC.png";
         Lang.ui.buttonDJQuit = "http://i.imgur.com/i4YkTFC.png";
         Lang.ui.buttonDJPlayShort = "http://i.imgur.com/SqU01C6.png";
-        Lang.rollover.host = "The Boss"
+        Lang.rollover.host = "Bosas"
         Lang.chat.help = "<strong>Chat Commands:</strong><br/>/em &nbsp; <em>Emote</em><br/>/me &nbsp; <em>Emote</em><br/>/clear &nbsp; <em>Clear Chat History</em><br/>/cap # &nbsp; <em>Limits the number of avatars rendered (1-200)</em><br/>/ts # &nbsp; <em>Chat timestamps (12, 24, 0)</em><br />/emoji on (or off) <em>Enable/disable Emojis</em><br /> /strobe on/off &nbsp; <em>Strobe light on/off</em><br /> /rave on/off &nbsp; <em>Lights out on/off</em><br />/close &nbsp; <em>Remove TFL Enhanced script</em> <br /> /Avatar number &nbsp; <em> change Halloween Avatars ( number = 1 to 13)</em> <br /> /Auto On &nbsp; <em> plugbot load </em>"
         $('#button-vote-negative').hide();
         $('#button-chat-popout').click(function(){setTimeout(function(){TFLEnhanced.initPopout()},500)})
