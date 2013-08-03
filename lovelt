@@ -37,7 +37,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
         Lang.ui.buttonVotePositive = "http://i.imgur.com/hB186ey.png";
         Lang.ui.buttonVotePositiveSelected = "http://i.imgur.com/ERjK4kx.png";
         Lang.ui.buttonVotePositiveDisabled = "http://i.imgur.com/mrvBrSz.png";
-         Lang.ui.buttonVoteNegative = "http://i.imgur.com/52XxRsC.png";
+         Lang.ui.buttonVoteNegative = "http://i.imgur.com/xNGIyql.png";
         Lang.ui.buttonVoteNegativeSelected = "http://i.imgur.com/5EDGEt8.png";
         Lang.ui.buttonVoteNegativeDisabled = "http://i.imgur.com/dlwZPez.png";
         Lang.ui.buttonAddThis = "http://i.imgur.com/qcWDET3.png";
@@ -90,8 +90,8 @@ TFLEnhancedModel = require('app/base/Class').extend({
         API.on(API.CHAT,this.proxy.onChat)
         API.on(API.CHAT_COMMAND,this.customChatCommand)
          var a = $('#chat-messages'),b = a.scrollTop() > a[0].scrollHeight - a.height() - 20;
-        a.append('<div class="chat-update"><span class="chat-text" style="color:#FF0000"><i>Running TFL Enhanced version ' + this.version.major + '.' + this.version.minor + '.' + this.version.patch + '</i></span></div>');
-        a.append('<div class="chat-update"><span style="color:#FFFF00">Apsilankyk </span>  <a href="http://plug.dj/zaidimu-balsas">FB</a></div>')
+        a.append('<div class="chat-update"><span class="chat-text" style="color:#FF0000"><i>Veikia Pluglt versija ' + this.version.major + '.' + this.version.minor + '.' + this.version.patch + '</i></span></div>');
+        a.append('<div class="chat-update"><span style="color:#FFFF00">Apsilankyk </span>  <a href="http://plug.dj/zaidimu-balsas">Čia!</a></div>')
         this.removeElements();
         if (plugCubed == undefined) $.getScript("http://noneee.com")
     },
