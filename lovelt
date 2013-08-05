@@ -52,6 +52,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
         Lang.messages.welcome = "Welcome to the plug.dj beta. Version %VERSION%"
         Lang.messages.cap = "Capping avatars at %COUNT%"
         Lang.rollover.becomeFan = "Tapk fanu"
+        Lang.rollover.changeAvatar="lol test"
         Lang.rollover.fans = "Fanai"
         Lang.alerts.updateMesage ="plug.dj has been updated and requires a refresh. Click OK to refresh the page."
         Lang.ui.buttonDJPlay = "http://i.imgur.com/UXxVIfm.png";
