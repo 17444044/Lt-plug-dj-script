@@ -5,6 +5,7 @@ if (TFLEnhanced !== undefined)
     TFLEnhanced.close();
 String.prototype.equalsIgnoreCase = function(other) {
     return this.toLowerCase() === other.toLowerCase();
+{var e={title:"0-99",required:0},t={title:"100-299",required:100},n={title:"308-699",required:300},r={title:"700-1499",required:700},i={title:"1500-2999",required:1500},s={title:"3000-6999",required:3e3},o={title:"7000-14999",required:7e3},u={title:"15000+",required:15e3};    
 };
 var plugCubed,
 plugBot,
