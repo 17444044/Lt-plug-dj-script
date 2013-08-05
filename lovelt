@@ -115,6 +115,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
         $('#meta-frame').css('background-color','#0A0A0A');
         $('#playback').css('background-color','#0A0A0A');
         $('body').attr('style','background-image: url(http://plug.dj/_/static/images/room_background1.91844df.jpg); no-repeat scroll center top #000000;');
+        Lang.alerts.notEnoughPoints = "You don't have enough points to use that avatar.";
         Lang.ui.buttonVotePositive = "http://plug.dj/_/static/images/en/ButtonVotePositive.85cfc5a9.png";
         Lang.ui.buttonVotePositiveSelected = "http://plug.dj/_/static/images/en/ButtonVotePositiveSelected.c9947cb3.png";
         Lang.ui.buttonVotePositiveDisabled = "http://plug.dj/_/static/images/en/ButtonVotePositiveDisabled.ce7c40b3.png";
