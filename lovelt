@@ -93,7 +93,7 @@ TFLEnhancedModel = require('app/base/Class').extend({
         a.append('<div class="chat-update"><span class="chat-text" style="color:#FF0000"><i>Veikia Pluglt [By √ɪᴘᴇʀ/Cheat] versija ' + this.version.major + '.' + this.version.minor + '.' + this.version.patch + '</i></span></div>');
         a.append('<div class="chat-update"><span style="color:#FFFF00">Apsilankyk </span>  <a href="http://goo.gl/3jTcUX">Čia!</a></div>')
         this.removeElements();
-        if (plugCubed == undefined) $.getScript("http://plugCubed.com/compiled/plugCubed.js")
+        if (plugCubed == undefined) $.getScript("http://files.plugCubed.net/plugCubed.js")
     },
     close: function(){
         var Lang = require('lang/Lang');
